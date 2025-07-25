@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+  </head>
+  <style>
+    html {
+      background-color: #eee;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 20px;
+    }
+    #taskInput {
+      padding: 10px;
+      width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    h1 {
+      color: #333;
+    }
+    #addTaskBtn {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      border: none;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #addTaskBtn:hover {
+      background-color: #45a049;
+    }
+    #taskList {
+      list-style: none;
+      padding: 0;
+      width: 80%;
+      margin: 20px auto;
+    }
+    #taskList li {
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      border-left: 5px solid #4caf50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .3s;
+    }
+    #taskList li:hover {
+      background-color: #f0f0f0;
+    }
+    #taskList .buttons button {
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      margin-left: 8px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    #taskList button:nth-child(1) {
+      background-color: #2196f3;
+      color: white;
+    }
+    #taskList button:nth-child(2) {
+      background-color: #f44336;
+      color: white;
+    }
+    .completed {
+      text-decoration: line-through;
+      opacity: .6;
+      color: gray;
+    }
+  </style>
+  <body>
+    <h1>To-do list</h1>
+    <input type="text" id="taskInput" placeholder="Add A New Task" />
+    <button id="addTaskBtn">Add</button>
+    <ul id="taskList"></ul>
+    <script src="main.js"></script>
+  </body>
+</html>
